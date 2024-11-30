@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulera's Portfolio</title>
+    <style>
+        :root {
+            --dark-blue: #0d1b2a;
+            --midnight-blue: #1b263b;
+            --steel-blue: #415a77;
+            --sky-blue: #778da9;
+            --light-gray: #e0e1dd;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: var(--light-gray);
+            background-color: var(--dark-blue);
+        }
+
+        header {
+            background-color: var(--midnight-blue);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Brush Script MT", cursive;
+            font-size: 3em;
+            color: var(--sky-blue);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: var(--light-gray);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--sky-blue);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--steel-blue);
+            border-radius: 10px;
+        }
+
+        .profile-image {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--sky-blue);
+            text-align: center;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: var(--light-gray);
+            margin: 5px 10px;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            color: var(--sky-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--midnight-blue);
+        }
+
+        footer p {
+            margin: 0;
+            color: var(--light-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mulera</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#resume">Resume</a>
+            <a href="#education">Education</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="placeholder.jpg" alt="Profile Image" class="profile-image">
+            <p>Hello! I'm Rhodah Mulera, an aspiring software developer passionate about technology and problem-solving. Outside work, I enjoy drawing, having adventures, meeting friends, and interacting with people.</p>
+            <div class="contact-links">
+                <h3>Contact Me</h3>
+                <a href="https://x.com/Mulera_rh" target="_blank">X</a>
+                <a href="https://github.com/Mulera_rh" target="_blank">GitHub</a>
+                <a href="https://instagram.com/Mulera_rh" target="_blank">Instagram</a>
+                <a href="https://linkedin.com/in/rhodah-mulera" target="_blank">LinkedIn</a>
+                <p>Phone: 0743177132</p>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p><strong>Programming Languages:</strong> Python, Java, JavaScript, C++</p>
+            <p><strong>Other Skills:</strong> Problem-Solving, Agile Development, Debugging</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Currently pursuing a Bachelor's degree in Mathematics and Computer Science at JKUAT.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rhodah Mulera</p>
+    </footer>
+</body>
+</html>
