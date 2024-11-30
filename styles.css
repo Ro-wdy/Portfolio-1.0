@@ -1,3 +1,4 @@
+/* General styles (apply to all devices) */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -64,11 +65,11 @@ main p, ul {
 }
 
 .image-container img {
-  width: 150px;
-  height: 150px;
+  width: 250px; /* Larger size for laptop and tablet */
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #e0e1dd; /* Optional border for styling */
+  border: 3px solid #e0e1dd; /* Optional border for styling */
 }
 
 .social-icons {
@@ -85,4 +86,53 @@ main p, ul {
 
 .social-icons img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive styles for smaller devices (phones) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+
+  .sidebar h1 {
+    font-size: 20px; /* Adjust title size */
+  }
+
+  .sidebar ul li a {
+    font-size: 16px; /* Smaller text for navigation */
+  }
+
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  main {
+    order: 2; /* Ensure main content appears before image on small screens */
+    padding: 10px;
+  }
+
+  .image-container {
+    order: 1;
+    padding: 10px;
+  }
+
+  .image-container img {
+    width: 200px; /* Slightly smaller for phones */
+    height: 200px;
+  }
+
+  .social-icons {
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Add space between icons */
+  }
+
+  .social-icons img {
+    width: 35px; /* Slightly smaller icons for phones */
+    height: 35px;
+  }
 }
